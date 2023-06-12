@@ -25,7 +25,7 @@
 
 <body class="bg-hijau">
 
-    <div class="container">
+        <div class="container">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
@@ -36,7 +36,7 @@
 
         </div>
 
-    </div>
+        </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

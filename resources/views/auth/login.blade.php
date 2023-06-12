@@ -4,22 +4,19 @@
     | LOGIN
 @endsection
 @section('content')
-<div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-lg-5 d-none d-lg-block">
-                                <p> <center>
-                                <img src="https://th.bing.com/th/id/R.26a4fbb5b11507db98408e71938be5f3?rik=ir2%2b4ZudtSgIPg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Xix68xvfQMo%2fUOJAT1FJmHI%2fAAAAAAAAEro%2fExw177elxwE%2fs1600%2fLogo%2bKota%2bBatu.jpg&ehk=T5aEpiKTdCdhiYfVSwse9if3TmuqAvybLNIEV80usRU%3d&risl=&pid=ImgRaw&r=0" 
-                                width="400" height="370"> 
-                            </p></center>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">LOGIN!</h1>
-                                    </div>
-                            <form method="POST" action="{{ route('login') }}">
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-6 col-md-4 col-lg-6 col-xl-10">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <p> <center>
+                <img src="https://th.bing.com/th/id/R.26a4fbb5b11507db98408e71938be5f3?rik=ir2%2b4ZudtSgIPg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Xix68xvfQMo%2fUOJAT1FJmHI%2fAAAAAAAAEro%2fExw177elxwE%2fs1600%2fLogo%2bKota%2bBatu.jpg&ehk=T5aEpiKTdCdhiYfVSwse9if3TmuqAvybLNIEV80usRU%3d&risl=&pid=ImgRaw&r=0" 
+                                width="250" height="150"> 
+                </div>
+            </p> <center>
+            <div class="col-lg-5 d-none d-lg-block">
+            <form method="POST" action="{{ route('login') }}">
                                     @csrf
 
                                     <div class="row mb-4">
@@ -57,12 +54,12 @@
                                         </div>
                                     </div>
                             </form>
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <hr class="my-4">
 
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 @endsection

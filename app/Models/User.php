@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\KategoriModel;
+use App\Models\BidangModel;
 
 class User extends Authenticatable
 {
@@ -20,9 +22,22 @@ class User extends Authenticatable
     protected $fillable = [
         'username',
         'name',
+        'bidang_id',
+        'kategori_id',
         'email',
         'password',
+        'role',
+
     ];
+
+    public function dt_userBidang()
+    {
+        return $this->belongsTo(BidangModel::class, 'bidang_id');
+    }
+    public function dt_userKategori()
+    {
+        return $this->belongsTo(KategoriModel::class, 'kategori_id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.

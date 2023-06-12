@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon ">
             <img src="asset/img/logo_kota_batu.png"  width="50" height="50">
         </div>
-        <div class="sidebar-brand-text mx-3">E-OPOIKI</div>
+        <div class="sidebar-brand-text mx-3"> SMART PEKAN</div>
     </a>
 
     <!-- Divider -->
@@ -34,6 +34,12 @@
         </a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="/users">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>DATA USERS</span>
+        </a>
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="/laporan/create">
             <i class="fas fa-fw fa-cog"></i>

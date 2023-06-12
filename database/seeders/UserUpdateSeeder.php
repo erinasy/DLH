@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Seeder;
 
 class UserUpdateSeeder extends Seeder
@@ -19,7 +20,7 @@ class UserUpdateSeeder extends Seeder
             'bidang_id' => '1101',
             'kategori_id' => '9012',
             'email' => 'adminUpdate@admin.com',
-            'password' => '67890',
+            'password' => Hash::make('67890'),
         ]);
         DB::table('users')->insert([
             'username'=>'05062023',
@@ -27,7 +28,7 @@ class UserUpdateSeeder extends Seeder
             'bidang_id' => '1101',
             'kategori_id' => '9011',
             'email' => 'puspita@admin.com',
-            'password' =>'99999',
+            'password' => Hash::make('99999'),
         ]);
     }
 }

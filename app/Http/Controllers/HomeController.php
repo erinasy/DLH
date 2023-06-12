@@ -25,7 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('sb-admin/main');
+    
+        $users = Auth::user();
+        return view('sb-admin/main',['user' => $users ]);
     }
     
     public function logout(Request $request)
@@ -36,5 +38,6 @@ class HomeController extends Controller
         $request->session()->regenerateToken();
         return redirect('/login');
     }
+    
 }
 
